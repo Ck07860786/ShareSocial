@@ -25,6 +25,9 @@ app.use(morgan('dev'))
 
 app.use('/api',userRoutes)
 app.use('/api',adminRoutes)
+app.get('/', (req, res) => {
+    res.send('Welcome to ShareSocial');
+  });
 
 
 
